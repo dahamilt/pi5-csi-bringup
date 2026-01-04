@@ -17,6 +17,22 @@ issues relevant to future Android (AAOS) porting.
 ## Platform Notes
 - Raspberry Pi OS Bookworm uses /boot/firmware/config.txt for firmware configuration
 
+## Hardware Arrival Execution Plan
+
+### CSI Camera
+1. Power off system
+2. Attach ribbon (verify orientation)
+3. Boot and capture dmesg probe logs
+4. Verify /dev/media* and /dev/video*
+5. Inspect media graph
+6. Validate userspace capture
+
+### USB-CAN
+1. Verify USB enumeration
+2. Bring up SocketCAN interface
+3. Send/receive test frames
+4. Integrate with vehicle state service
+
 ## Status
 - [x] Platform baseline captured (kernel + firmware)
 - [ ] CSI sensor probe confirmed (dmesg)
