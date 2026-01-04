@@ -15,10 +15,10 @@ issues relevant to future Android (AAOS) porting.
 - Kernel: 6.12.x (rpt)
 - Firmware: vcgencmd version 2226a853 (release) (embedded)
 
-## Current Status
-- [x] Kernel and firmware validated
-- [ ] CSI sensor probe
-- [ ] Media controller graph validated
-- [ ] Userspace capture
+## Status
+- [x] Platform baseline captured (kernel + firmware)
+- [ ] CSI sensor probe confirmed (dmesg)
+- [ ] Media controller graph captured (media-ctl)
+- [ ] Userspace capture validated (libcamera)
 - [ ] Failure mode testing
-- [ ] Android relevance notes
+- [ ] Android/AAOS camera notes
