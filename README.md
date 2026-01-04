@@ -9,11 +9,13 @@ issues relevant to future Android (AAOS) porting.
 - Raspberry Pi 5 (8GB)
 - Raspberry Pi Camera v3 (CSI-2)
 
-
 ## Software
 - OS: Raspberry Pi OS (Bookworm)
 - Kernel: 6.12.x (rpt)
 - Firmware: vcgencmd version 2226a853 (release) (embedded)
+
+## Platform Notes
+- Raspberry Pi OS Bookworm uses /boot/firmware/config.txt for firmware configuration
 
 ## Current Status
 - [x] Kernel and firmware validated
