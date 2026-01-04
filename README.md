@@ -17,10 +17,10 @@ issues relevant to future Android (AAOS) porting.
 ## Platform Notes
 - Raspberry Pi OS Bookworm uses /boot/firmware/config.txt for firmware configuration
 
-## Current Status
-- [x] Kernel and firmware validated
-- [ ] CSI sensor probe
-- [ ] Media controller graph validated
-- [ ] Userspace capture
+## Status
+- [x] Platform baseline captured (kernel + firmware)
+- [ ] CSI sensor probe confirmed (dmesg)
+- [ ] Media controller graph captured (media-ctl)
+- [ ] Userspace capture validated (libcamera)
 - [ ] Failure mode testing
-- [ ] Android relevance notes
+- [ ] Android/AAOS camera notes
