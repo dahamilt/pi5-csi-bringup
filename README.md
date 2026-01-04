@@ -8,7 +8,7 @@ issues relevant to future Android (AAOS) porting.
 ## Hardware
 - Raspberry Pi 5 (8GB)
 - Raspberry Pi Camera v3 (CSI-2)
-- Official CSI ribbon cable
+
 
 ## Software
 - OS: Raspberry Pi OS (Bookworm)
