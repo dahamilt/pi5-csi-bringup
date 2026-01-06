@@ -20,13 +20,16 @@
 5. Updated Raspberry Pi boot order:
    - `raspi-config → Advanced Options → Boot Order → NVMe/USB`
 
-### Result
-- Kernel and root filesystem boot from NVMe
-- SD card retained as fallback
-- Verified using `lsblk` and `findmnt /`
 
 ###
 During NVMe migration, mDNS hostname resolution failed.
 Recovered system by manual ssh to various ips 
 verified boot completion, and re-established network access.
+
+### Networking Verification
+- wlan0 acquired DHCP address: 192.168.0.217
+- Default route via 192.168.0.1
+- DNS provided via /etc/resolv.conf (NetworkManager-managed)
+- mDNS (.local) temporarily unavailable during NVMe migration,
+  but system reachable via IP-based SSH
 
