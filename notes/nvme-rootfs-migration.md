@@ -33,3 +33,15 @@ verified boot completion, and re-established network access.
 - mDNS (.local) temporarily unavailable during NVMe migration,
   but system reachable via IP-based SSH
 
+
+### mDNS Hostname Behavior
+During NVMe migration and reboot, the system advertised itself as
+`raspberrypi-2.local` due to an mDNS hostname collision.
+This is expected Avahi behavior. Hostname was later normalized
+to a unique lab identifier to avoid collisions.
+
+### Hostname Resolution Fix
+After changing the system hostname using `hostnamectl`,
+`sudo` reported inability to resolve the local hostname.
+Resolved by updating `/etc/hosts` to map 127.0.1.1 to the
+new hostname and restarting avahi-daemon.
