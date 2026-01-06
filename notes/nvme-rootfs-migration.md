@@ -24,3 +24,9 @@
 - Kernel and root filesystem boot from NVMe
 - SD card retained as fallback
 - Verified using `lsblk` and `findmnt /`
+
+###
+During NVMe migration, mDNS hostname resolution failed.
+Recovered system by manual ssh to various ips 
+verified boot completion, and re-established network access.
+
